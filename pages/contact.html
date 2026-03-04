@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — YourName</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-logo">YourName</a>
+  <ul class="nav-links">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="certifications.html">Certs</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-nav-close" id="mobileNavClose">✕</button>
+  <a href="../index.html">Home</a>
+  <a href="projects.html">Projects</a>
+  <a href="about.html">About</a>
+  <a href="certifications.html">Certifications</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<main>
+
+<div class="page-hero">
+  <div class="eyebrow">Get In Touch</div>
+  <h1 class="section-title">Contact</h1>
+  <p class="section-sub">Open to feedback, collaborations, and opportunities. Drop a message — I'll get back to you.</p>
+</div>
+
+<section>
+  <div class="contact-grid">
+
+    <div class="contact-left reveal">
+      <h3>Let's Talk</h3>
+      <p>Whether you're a recruiter, a fellow developer, or someone who wants to discuss a project idea — reach out. Happy to connect.</p>
+
+      <a href="/cdn-cgi/l/email-protection#8af3e5fff8a4efe7ebe3e6caeff2ebe7fae6efa4e9e5e7" class="contact-item">
+        <span class="contact-item-label">Email</span>
+        <span class="contact-item-val"><span class="__cf_email__" data-cfemail="c5bcaab0b7eba0a8a4aca985a0bda4a8b5a9a0eba6aaa8">[email&#160;protected]</span></span>
+      </a>
+      <a href="https://github.com/yourusername" class="contact-item" target="_blank">
+        <span class="contact-item-label">GitHub</span>
+        <span class="contact-item-val">github.com/yourusername</span>
+      </a>
+      <a href="https://linkedin.com/in/yourusername" class="contact-item" target="_blank">
+        <span class="contact-item-label">LinkedIn</span>
+        <span class="contact-item-val">linkedin.com/in/yourusername</span>
+      </a>
+      <a href="https://www.figma.com/@yourusername" class="contact-item" target="_blank">
+        <span class="contact-item-label">Figma Community</span>
+        <span class="contact-item-val">figma.com/@yourusername</span>
+      </a>
+
+      <div style="border-top:1px solid var(--line);margin-top:1rem;padding-top:1.2rem;">
+        <div style="font-size:0.6rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--orange);margin-bottom:6px;">Response Time</div>
+        <p style="font-size:0.76rem;color:var(--muted);line-height:1.65;">Usually within 24–48 hours.<br>Based in India (IST).</p>
+      </div>
+    </div>
+
+    <div class="contact-right reveal">
+      <!-- FormSubmit: replace YOUR_EMAIL with your real email -->
+      <form id="contactForm" action="https://formsubmit.co/your.email@example.com" method="POST">
+        <input type="hidden" name="_subject" value="Portfolio Contact" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_next" value="https://yoursite.netlify.app/pages/contact.html" />
+        <input type="text" name="_honey" style="display:none" />
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">First Name</label>
+            <input class="form-input" type="text" name="first_name" placeholder="John" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Last Name</label>
+            <input class="form-input" type="text" name="last_name" placeholder="Doe" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email</label>
+          <input class="form-input" type="email" name="email" placeholder="john@example.com" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label">Subject</label>
+          <input class="form-input" type="text" name="subject" placeholder="Collaboration / Feedback / Other" />
+        </div>
+        <div class="form-group">
+          <label class="form-label">Message</label>
+          <textarea class="form-textarea" name="message" placeholder="What's on your mind?" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Send Message →</button>
+        <p style="font-size:0.65rem;color:var(--muted);text-align:center;margin-top:1rem;letter-spacing:0.06em;">Powered by FormSubmit · No spam.</p>
+      </form>
+    </div>
+
+  </div>
+</section>
+</main>
+
+<footer>
+  <span class="footer-brand">YourName</span>
+  <span clas

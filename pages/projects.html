@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — YourName</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-logo">YourName</a>
+  <ul class="nav-links">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="projects.html" class="active">Projects</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="certifications.html">Certs</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-nav-close" id="mobileNavClose">✕</button>
+  <a href="../index.html">Home</a>
+  <a href="projects.html">Projects</a>
+  <a href="about.html">About</a>
+  <a href="certifications.html">Certifications</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<main>
+
+<div class="page-hero">
+  <div class="eyebrow">Portfolio</div>
+  <h1 class="section-title">All Projects</h1>
+  <p class="section-sub">Five mini projects spanning PHP backends, JavaScript, and Figma UI/UX. Each one demonstrates a different technology and skill.</p>
+</div>
+
+<!-- FILTER -->
+<div style="padding:0 2rem;">
+  <div class="filter-row">
+    <button class="filter-btn active" data-filter="all">All (5)</button>
+    <button class="filter-btn" data-filter="php">PHP Projects</button>
+    <button class="filter-btn" data-filter="js">JavaScript</button>
+    <button class="filter-btn" data-filter="figma">Figma / UI·UX</button>
+  </div>
+</div>
+
+<section>
+
+  <!-- ══ PHP ══ -->
+  <div class="category-section filter-section" data-category="php" id="php">
+    <div class="cat-header">
+      <span class="cat-num">01</span>
+      <div>
+        <div class="cat-title">PHP Projects</div>
+        <div class="cat-sub">Hosted · 000WebHost / InfinityFree · MySQL Backend</div>
+      </div>
+      <span class="cat-count">2 Projects</span>
+    </div>
+
+    <div class="cards-grid">
+
+      <div class="project-card reveal">
+        <div class="card-thumb thumb-php">
+          <span>🎬</span>
+          <span class="thumb-wm">PHP</span>
+          <span class="card-tag">PHP · MySQL</span>
+        </div>
+        <div class="card-body">
+          <div class="card-index">Project 01</div>
+          <h3 class="card-title">PHP Movie Streaming Website</h3>
+          <p class="card-desc">
+            Full-stack movie platform with user registration & login, admin dashboard for managing movies, a browsable catalogue, and dedicated trailer/streaming pages. Fully database-driven with PHP sessions.
+          </p>
+          <div class="tech-tags">
+            <span class="tag tag-php">PHP</span>
+            <span class="tag tag-mysql">MySQL</span>
+            <span class="tag tag-css">CSS3</span>
+            <span class="tag">Login / Auth</span>
+            <span class="tag">Admin Panel</span>
+            <span class="tag">Sessions</span>
+          </div>
+          <div style="border:1px solid var(--line);margin-bottom:1.1rem;">
+            <div style="background:var(--surface);padding:5px 12px;font-size:0.6rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--orange);border-bottom:1px solid var(--line);">Key Features</div>
+            <ul style="list-style:none;padding:10px 12px;display:flex;flex-direction:column;gap:4px;">
+              <li style="font-size:0.74rem;color:var(--muted);padding-left:1.1rem;position:relative;"><span style="position:absolute;left:0;color:var(--orange);">—</span>User Register / Login / Logout</li>
+              <li style="font-size:0.74rem;color:var(--muted);padding-left:1.1rem;position:relative;"><span style="position:absolute;left:0;color:var(--orange);">—</span>Movie Catalogue with Posters</li>
+              <li style="font-size:0.74rem;color:var(--muted);padding-left:1.1rem;position:relative;"><span style="position:absolute;left:0;color:var(--orange);">—</span>Admin CRUD Panel</li>
+              <li style="font-size:0.74rem;color:var(--muted);padding-left:1.1rem;position:relative;"><span style="position:absolute;left:0;color:var(--orange);">—</span>Trailer / Streaming Page</li>
+              <li style="font-size:0.74rem;color:var(--muted);padding-left:1.1rem;position:relative;"><span style="position:absolute;left:0;color:var(--orange);">—</span>MySQL Relational Database</li>
+            </ul>
+          </div>
+          <div class="card-actions">
+            <a href="https://your-movie-site.000webhostapp.com" class="btn btn-primary btn-sm" target="_blank">▶ View Live</a>
+            <a href="https://github.com/yourusername/php-movie" class="btn btn-ghost btn-sm" target="_blank">{ } Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="card-thumb thumb-php">
+          <span>🛒</span>
+          <span class="thumb-wm">PHP</span>
+          <span class="card-tag">PHP · MySQL</span>
+        </div>
+        <div class="card-body">
+          <div class="card-index">Project 02</div>
+          <h3 class="card-title">PHP Grocery Store Website</h3>
+          <p class="card-desc">
+            E-commerce style grocery store with product listings, category filtering, cart simulation, and MySQL product management. Clean UI with dynamic pages built in PHP.
+          </p>
+          <div class="tech-tags">
+            <span class="tag tag-php">PHP</span>
+            <span class="tag tag-mysql">MySQL</span>
+            <span class="tag tag-css">CSS3</span>
+            <span class="tag">Cart System</span>
+            <span class="tag">Categories</span>
+          </div>
+          <div style="border:1px solid var(--line);margin-bottom:1.1rem;">
+            <div style="background:var(--surface);padding:5px 12px;font-size:0.6rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--orange);border-bottom:1px solid var(--line);">Key Features</div>
+            <ul style="list-style:none;padding:10px 12px;display:flex;flex-direction:column;gap:4px;">
+              <li style="font-size:0.74rem;color:var(--muted);padding-left:1.1rem;position:relative;"><span style="position:absolute;left:0;color:var(--orange);">—</span>Product Listings & Detail Pages</li>
+              <li style="font-size:0.74rem;color:var(--muted);padding-left:1.1rem;position:relative;"><span style="position:absolute;left:0;color:var(--orange);">—</span>Category Filter (Fruits, Dairy, etc.)</li>
+              <li style="font-size:0.74rem;color:var(--muted);padding-left:1.1rem;position:relative;"><span style="position:absolute;left:0;color:var(--orange);">—</span>Cart Simulation — Add / Remove</li>
+              <li style="font-size:0.74rem;color:var(--muted);padding-left:1.1rem;position:relative;"><span style="position:absolute;left:0;color:var(--orange);">—</span>MySQL Product Database</li>
+              <li style="font-size:0.74rem;color:var(--muted);padding-left:1.1rem;position:relative;"><span style="position:absolute;left:0;color:var(--orange);">—</span>Responsive Mobile Layout</li>
+            </ul>
+          </div>
+          <div class="card-actions">
+            <a href="https://your-grocery-site.000webhostapp.com" class="btn btn-primary btn-sm" target="_blank">▶ View Live</a>
+            <a href="https://github.com/yourusername/php-grocery" class="btn btn-ghost btn-sm" target="_blank">{ } Code</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══ JS ══ -->
+  <div class="category-section filter-section" data-category="js" id="js">
+    <div class="cat-header">
+      <span class="cat-num">02</span>
+      <div>
+        <div class="cat-title">JavaScript Project</div>
+        <div class="cat-sub">Your Own Project · Hosted on Netlify</div>
+      </div>
+      <span class="cat-count">1 Project</span>
+    </div>
+
+    <div class="cards-grid">
+
+      <!-- ⚠️ THIS IS YOUR OWN JS PROJECT — fill in the details -->
+      <div class="project-card reveal">
+        <div class="card-thumb thumb-js">
+          <span>⚡</span><!-- change emoji to match your project -->
+          <span class="thumb-wm">JS</span>
+          <span class="card-tag">JavaScript</span>
+        </div>
+        <div class="card-body">
+          <div class="card-index">Project 03</div>
+          <h3 class="card-title">Your JS Project Title</h3><!-- ← REPLACE -->
+          <p class="card-desc">
+            Add your project description here. Explain what it does, what makes it interesting, and what problem it solves. This is your own project — drop it in!
+          </p><!-- ← REPLACE -->
+          <div class="tech-tags">
+            <span class="tag tag-js">JavaScript</span>
+            <span class="tag">Your Stack</span><!-- ← REPLACE / ADD TAGS -->
+          </div>
+          <div style="border:1px solid var(--line);margin-bottom:1.1rem;">
+            <div style="background:var(--surface);padding:5px 12px;font-size:0.6rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--orange);border-bottom:1px solid var(--line);">Key Features</div>
+            <ul style="list-style:none;padding:10px 12px;display:flex;flex-direction:column;gap:4px;">
+              <li style="font-size:0.74rem;color:var(--muted);padding-left:1.1rem;position:relative;"><span style="position:absolute;left:0;color:var(--orange);">—</span>Feature 1</li><!-- ← REPLACE -->
+              <li style="font-size:0.74rem;color:var(--muted);padding-left:1.1rem;position:relative;"><span style="position:absolute;left:0;color:var(--orange);">—</span>Feature 2</li>
+              <li style="font-size:0.74rem;color:var(--muted);padding-left:1.1rem;position:relative;"><span style="position:absolute;left:0;color:var(--orange);">—</span>Feature 3</li>
+            </ul>
+          </div>
+          <div class="card-actions">
+            <a href="YOUR_NETLIFY_OR_LIVE_URL" class="btn btn-primary btn-sm" target="_blank">▶ View Live</a>
+            <a href="YOUR_GITHUB_REPO_URL" class="btn btn-ghost btn-sm" target="_blank">{ } Code</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══ FIGMA ══ -->
+  <div class="category-section filter-section" data-category="figma" id="figma">
+    <div class="cat-header">
+      <span class="cat-num">03</span>
+      <div>
+        <div class="cat-title">UI/UX & Figma Prototyping</div>
+        <div class="cat-sub">Designed in Figma · Interactive Prototypes</div>
+      </div>
+      <span class="cat-count">2 Projects</span>
+    </div>
+
+    <div class="figma-grid">
+
+      <!-- PLANET -->
+      <div class="figma-card reveal">
+        <div class="figma-embed-area">
+          <!-- ↓↓↓ PASTE YOUR FIGMA EMBED IFRAME HERE ↓↓↓ -->
+          <!-- <iframe src="https://www.figma.com/embed?embed_host=share&url=YOUR_URL" allowfullscreen></iframe> -->
+          <div class="figma-placeholder">
+            <span class="figma-placeholder-icon">🪐</span>
+            <div>
+              <p style="color:var(--paper);font-weight:500;margin-bottom:4px;">Planet Landing Page</p>
+              <p>Paste your Figma embed &lt;iframe&gt; here</p>
+              <code style="font-size:0.65rem;background:#2a2a28;padding:3px 8px;display:inline-block;margin-top:6px;color:#888;">figma.com/embed?embed_host=share&url=...</code>
+            </div>
+          </div>
+        </div>
+        <div class="figma-body">
+          <h3 class="figma-title">Planet Landing Page</h3>
+          <p class="figma-desc">
+            A cinematic, space-themed landing page prototype with orbital animations, atmospheric gradients, and scroll-triggered transitions — designed to convey scale and wonder.
+          </p>
+          <div class="ux-panel">
+            <div class="ux-panel-head">UX Design Decisions</div>
+            <ul>
+              <li>Deep space palette maximizes planet visual impact</li>
+              <li>Large hero section for immersive first impression</li>
+              <li>Minimal text — visuals carry the experience</li>
+              <li>High contrast CTA ensures clear user action path</li>
+              <li>Subtle orbit motion adds depth without distraction</li>
+            </ul>
+          </div>
+          <div class="tech-tags" style="margin-bottom:1.1rem;">
+            <span class="tag tag-figma">Figma</span>
+            <span class="tag">Auto Layout</span>
+            <span class="tag">Components</span>
+            <span class="tag">Interactions</span>
+          </div>
+          <a href="https://www.figma.com/proto/YOUR_FILE_ID" class="btn btn-outline btn-sm" target="_blank">↗ Open in Figma</a>
+        </div>
+      </div>
+
+      <!-- SHOE -->
+      <div class="figma-card reveal">
+        <div class="figma-embed-area">
+          <!-- ↓↓↓ PASTE YOUR FIGMA EMBED IFRAME HERE ↓↓↓ -->
+          <!-- <iframe src="https://www.figma.com/embed?embed_host=share&url=YOUR_URL" allowfullscreen></iframe> -->
+          <div class="figma-placeholder">
+            <span class="figma-placeholder-icon">👟</span>
+            <div>
+              <p style="color:var(--paper);font-weight:500;margin-bottom:4px;">Shoe Carousel Landing Page</p>
+              <p>Paste your Figma embed &lt;iframe&gt; here</p>
+              <code style="font-size:0.65rem;background:#2a2a28;padding:3px 8px;display:inline-block;margin-top:6px;color:#888;">figma.com/embed?embed_host=share&url=...</code>
+            </div>
+          </div>
+        </div>
+        <div class="figma-body">
+          <h3 class="figma-title">Shoe Carousel Landing Page</h3>
+          <p class="figma-desc">
+            A product-focused landing page for a premium sneaker brand with a horizontal 3D carousel, floating product tags, and smooth hover transitions — creating an immersive shopping feel.
+          </p>
+          <div class="ux-panel">
+            <div class="ux-panel-head">UX Design Decisions</div>
+            <ul>
+              <li>Carousel keeps multiple products visible without clutter</li>
+              <li>Floating badge highlights key selling points fast</li>
+              <li>High contrast shoe image against clean background</li>
+              <li>Bold type hierarchy guides the user journey clearly</li>
+              <li>Drop shadow on shoe adds realism and depth</li>
+            </ul>
+          </div>
+          <div class="tech-tags" style="margin-bottom:1.1rem;">
+            <span class="tag tag-figma">Figma</span>
+            <span class="tag">Carousel</span>
+            <span class="tag">Smart Animate</span>
+            <span class="tag">E-Commerce</span>
+          </div>
+          <a href="https://www.figma.com/proto/YOUR_FILE_ID" class="btn btn-outline btn-sm" target="_blank">↗ Open in Figma</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+</main>
+
+<footer>
+  <span class="footer-brand">YourName</span>
+  <span class="footer-text">CS Student · Final Year Project · <span>2024</span></span>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
