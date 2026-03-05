@@ -221,7 +221,6 @@ section {
   color: var(--muted);
   max-width: 440px;
   line-height: 1.75;
-  margin-bottom: 3rem;
 }
 
 /* HERO */
@@ -926,24 +925,31 @@ section {
 }
 
 .about-avatar-block {
-  aspect-ratio: 1;
-  max-width: 200px;
+  width: 100%;           
+  aspect-ratio: 4/3;    
+  border: 4px solid var(--ink);
+  box-shadow: 3px 3px 0px var(--orange);
+  overflow: hidden;
+  margin-bottom: 1rem;
   background: var(--surface);
-  border: 1px solid var(--ink);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 5rem;
-  position: relative;
+}
+.about-avatar-block img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
 }
 
-.about-avatar-block::after {
-  content: '';
-  position: absolute;
-  inset: 5px;
-  border: 1px solid var(--line);
-  pointer-events: none;
+@media (max-width: 768px) {
+  .about-avatar-block {
+    width: 100%;
+    aspect-ratio: 1/1;
+    box-shadow: 2px 2px 0px var(--orange);
+    margin-bottom: 1.5rem;
+  }
 }
+
 
 .about-info-item {
   border-top: 1px solid var(--line);
