@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects — YourName</title>
+  <title>Projects — MohitRawal</title>
   <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
 
 <nav>
-  <a href="../index.html" class="nav-logo">YourName</a>
+  <a href="../index.html" class="nav-logo">MohitRawal</a>
   <ul class="nav-links">
     <li><a href="../index.html">Home</a></li>
     <li><a href="projects.html" class="active">Projects</a></li>
@@ -33,34 +33,36 @@
 <div class="page-hero">
   <div class="eyebrow">Portfolio</div>
   <h1 class="section-title">All Projects</h1>
-  <p class="section-sub">Five mini projects spanning PHP backends, JavaScript, and Figma UI/UX. Each one demonstrates a different technology and skill.</p>
+  <p class="section-sub">Three live dev projects across PHP and JavaScript, plus two Figma UI/UX prototypes — each built, deployed, and owned end-to-end.</p>
 </div>
 
 <!-- FILTER -->
 <div style="padding:0 2rem;">
   <div class="filter-row">
     <button class="filter-btn active" data-filter="all">All (5)</button>
-    <button class="filter-btn" data-filter="php">PHP Projects</button>
-    <button class="filter-btn" data-filter="js">JavaScript</button>
+    <button class="filter-btn" data-filter="dev">Dev Projects</button>
     <button class="filter-btn" data-filter="figma">Figma / UI·UX</button>
   </div>
 </div>
 
 <section>
 
-  <!-- ══ PHP ══ -->
-  <div class="category-section filter-section" data-category="php" id="php">
+  <!-- ══════════════════════════════════════
+       DEV PROJECTS
+  ══════════════════════════════════════ -->
+  <div class="category-section filter-section" data-category="dev" id="php">
     <div class="cat-header">
       <span class="cat-num">01</span>
       <div>
-        <div class="cat-title">PHP Projects</div>
-        <div class="cat-sub">Hosted · 000WebHost / InfinityFree · MySQL Backend</div>
+        <div class="cat-title">Dev Projects</div>
+        <div class="cat-sub">PHP · JavaScript · APIs · GitHub Pages · InfinityFree</div>
       </div>
-      <span class="cat-count">2 Projects</span>
+      <span class="cat-count">3 Projects</span>
     </div>
 
     <div class="cards-grid">
 
+      <!-- ── PROJECT 01: PHP MOVIE STREAMING ── -->
       <div class="project-card reveal">
         <div class="card-thumb thumb-php">
           <span>🎬</span>
@@ -71,113 +73,104 @@
           <div class="card-index">Project 01</div>
           <h3 class="card-title">PHP Movie Streaming Website</h3>
           <p class="card-desc">
-            Full-stack movie platform with user registration & login, admin dashboard for managing movies, a browsable catalogue, and dedicated trailer/streaming pages. Fully database-driven with PHP sessions.
+           A vinatge style based movie streaming platform preserving the black and white era of cinema. Contains movie catalogue, and streaming pages. Deployed live on InfinityFree.
           </p>
           <div class="tech-tags">
-            <span class="tag tag-php">PHP</span>
+            <span class="tag tag-php">HTML5</span>
+            <span class="tag tag-php">CSS3</span>
             <span class="tag tag-mysql">MySQL</span>
-            <span class="tag tag-css">CSS3</span>
-            <span class="tag">Login / Auth</span>
-            <span class="tag">Admin Panel</span>
-            <span class="tag">Sessions</span>
+            <span class="tag tag-css">PHP</span>
+            <span class="tag">InfinityFree</span>
           </div>
+
           <div style="border:1px solid var(--line);margin-bottom:1.1rem;">
             <div style="background:var(--surface);padding:5px 12px;font-size:0.6rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--orange);border-bottom:1px solid var(--line);">Key Features</div>
             <ul style="list-style:none;padding:10px 12px;display:flex;flex-direction:column;gap:4px;">
-              <li style="font-size:0.74rem;color:var(--muted);padding-left:1.1rem;position:relative;"><span style="position:absolute;left:0;color:var(--orange);">—</span>User Register / Login / Logout</li>
-              <li style="font-size:0.74rem;color:var(--muted);padding-left:1.1rem;position:relative;"><span style="position:absolute;left:0;color:var(--orange);">—</span>Movie Catalogue with Posters</li>
-              <li style="font-size:0.74rem;color:var(--muted);padding-left:1.1rem;position:relative;"><span style="position:absolute;left:0;color:var(--orange);">—</span>Admin CRUD Panel</li>
-              <li style="font-size:0.74rem;color:var(--muted);padding-left:1.1rem;position:relative;"><span style="position:absolute;left:0;color:var(--orange);">—</span>Trailer / Streaming Page</li>
+              <li style="font-size:0.74rem;color:var(--muted);padding-left:1.1rem;position:relative;"><span style="position:absolute;left:0;color:var(--orange);">—</span>Movie Catalogue with Poster Thumbnails</li>
+              <li style="font-size:0.74rem;color:var(--muted);padding-left:1.1rem;position:relative;"><span style="position:absolute;left:0;color:var(--orange);">—</span>Admin CRUD Panel — Add / Edit / Delete Movies</li>
+              <li style="font-size:0.74rem;color:var(--muted);padding-left:1.1rem;position:relative;"><span style="position:absolute;left:0;color:var(--orange);">—</span> Streaming Page</li>
               <li style="font-size:0.74rem;color:var(--muted);padding-left:1.1rem;position:relative;"><span style="position:absolute;left:0;color:var(--orange);">—</span>MySQL Relational Database</li>
+              <li style="font-size:0.74rem;color:var(--muted);padding-left:1.1rem;position:relative;"><span style="position:absolute;left:0;color:var(--orange);">—</span>Deployed Live on InfinityFree</li>
             </ul>
           </div>
+
           <div class="card-actions">
-            <a href="https://your-movie-site.000webhostapp.com" class="btn btn-primary btn-sm" target="_blank">▶ View Live</a>
-            <a href="https://github.com/yourusername/php-movie" class="btn btn-ghost btn-sm" target="_blank">{ } Code</a>
+            <a href="https://mohitwebdev.infinityfreeapp.com" class="btn btn-primary btn-sm" target="_blank" rel="noopener">▶ View Live</a>
+            <a href="https://mohitwebdev.infinityfreeapp.com" class="btn btn-ghost btn-sm" target="_blank" rel="noopener">↗ Site</a>
           </div>
         </div>
       </div>
 
-      <div class="project-card reveal">
-        <div class="card-thumb thumb-php">
-          <span>🛒</span>
-          <span class="thumb-wm">PHP</span>
-          <span class="card-tag">PHP · MySQL</span>
-        </div>
-        <div class="card-body">
-          <div class="card-index">Project 02</div>
-          <h3 class="card-title">PHP Grocery Store Website</h3>
-          <p class="card-desc">
-            E-commerce style grocery store with product listings, category filtering, cart simulation, and MySQL product management. Clean UI with dynamic pages built in PHP.
-          </p>
-          <div class="tech-tags">
-            <span class="tag tag-php">PHP</span>
-            <span class="tag tag-mysql">MySQL</span>
-            <span class="tag tag-css">CSS3</span>
-            <span class="tag">Cart System</span>
-            <span class="tag">Categories</span>
-          </div>
-          <div style="border:1px solid var(--line);margin-bottom:1.1rem;">
-            <div style="background:var(--surface);padding:5px 12px;font-size:0.6rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--orange);border-bottom:1px solid var(--line);">Key Features</div>
-            <ul style="list-style:none;padding:10px 12px;display:flex;flex-direction:column;gap:4px;">
-              <li style="font-size:0.74rem;color:var(--muted);padding-left:1.1rem;position:relative;"><span style="position:absolute;left:0;color:var(--orange);">—</span>Product Listings & Detail Pages</li>
-              <li style="font-size:0.74rem;color:var(--muted);padding-left:1.1rem;position:relative;"><span style="position:absolute;left:0;color:var(--orange);">—</span>Category Filter (Fruits, Dairy, etc.)</li>
-              <li style="font-size:0.74rem;color:var(--muted);padding-left:1.1rem;position:relative;"><span style="position:absolute;left:0;color:var(--orange);">—</span>Cart Simulation — Add / Remove</li>
-              <li style="font-size:0.74rem;color:var(--muted);padding-left:1.1rem;position:relative;"><span style="position:absolute;left:0;color:var(--orange);">—</span>MySQL Product Database</li>
-              <li style="font-size:0.74rem;color:var(--muted);padding-left:1.1rem;position:relative;"><span style="position:absolute;left:0;color:var(--orange);">—</span>Responsive Mobile Layout</li>
-            </ul>
-          </div>
-          <div class="card-actions">
-            <a href="https://your-grocery-site.000webhostapp.com" class="btn btn-primary btn-sm" target="_blank">▶ View Live</a>
-            <a href="https://github.com/yourusername/php-grocery" class="btn btn-ghost btn-sm" target="_blank">{ } Code</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- ══ JS ══ -->
-  <div class="category-section filter-section" data-category="js" id="js">
-    <div class="cat-header">
-      <span class="cat-num">02</span>
-      <div>
-        <div class="cat-title">JavaScript Project</div>
-        <div class="cat-sub">Your Own Project · Hosted on Netlify</div>
-      </div>
-      <span class="cat-count">1 Project</span>
-    </div>
-
-    <div class="cards-grid">
-
-      <!-- ⚠️ THIS IS YOUR OWN JS PROJECT — fill in the details -->
+      <!-- ── PROJECT 02: COLOR PALETTE GENERATOR ── -->
       <div class="project-card reveal">
         <div class="card-thumb thumb-js">
-          <span>⚡</span><!-- change emoji to match your project -->
+          <span>🎨</span>
           <span class="thumb-wm">JS</span>
           <span class="card-tag">JavaScript</span>
         </div>
         <div class="card-body">
-          <div class="card-index">Project 03</div>
-          <h3 class="card-title">Your JS Project Title</h3><!-- ← REPLACE -->
+          <div class="card-index">Project 02</div>
+          <h3 class="card-title">Personalized Color Palette Generator</h3>
           <p class="card-desc">
-            Add your project description here. Explain what it does, what makes it interesting, and what problem it solves. This is your own project — drop it in!
-          </p><!-- ← REPLACE -->
+           Personalized color palette generator built with JavaScript with integrated chatbot and copy-to-clipboard and png download support. Deployed on GitHub Pages.
+          </p>
           <div class="tech-tags">
             <span class="tag tag-js">JavaScript</span>
-            <span class="tag">Your Stack</span><!-- ← REPLACE / ADD TAGS -->
+            <span class="tag">HTML5</span>
+            <span class="tag tag-css">CSS3</span>
+            <span class="tag">Logic Building</span>
+            <span class="tag">GitHub Pages</span>
           </div>
+
           <div style="border:1px solid var(--line);margin-bottom:1.1rem;">
             <div style="background:var(--surface);padding:5px 12px;font-size:0.6rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--orange);border-bottom:1px solid var(--line);">Key Features</div>
             <ul style="list-style:none;padding:10px 12px;display:flex;flex-direction:column;gap:4px;">
-              <li style="font-size:0.74rem;color:var(--muted);padding-left:1.1rem;position:relative;"><span style="position:absolute;left:0;color:var(--orange);">—</span>Feature 1</li><!-- ← REPLACE -->
-              <li style="font-size:0.74rem;color:var(--muted);padding-left:1.1rem;position:relative;"><span style="position:absolute;left:0;color:var(--orange);">—</span>Feature 2</li>
-              <li style="font-size:0.74rem;color:var(--muted);padding-left:1.1rem;position:relative;"><span style="position:absolute;left:0;color:var(--orange);">—</span>Feature 3</li>
+              <li style="font-size:0.74rem;color:var(--muted);padding-left:1.1rem;position:relative;"><span style="position:absolute;left:0;color:var(--orange);">—</span>Hex code display for each color</li>
+              <li style="font-size:0.74rem;color:var(--muted);padding-left:1.1rem;position:relative;"><span style="position:absolute;left:0;color:var(--orange);">—</span>One-click copy-to-clipboard</li>
+              <li style="font-size:0.74rem;color:var(--muted);padding-left:1.1rem;position:relative;"><span style="position:absolute;left:0;color:var(--orange);">—</span>Deployed on GitHub Pages</li>
             </ul>
           </div>
+
           <div class="card-actions">
-            <a href="YOUR_NETLIFY_OR_LIVE_URL" class="btn btn-primary btn-sm" target="_blank">▶ View Live</a>
-            <a href="YOUR_GITHUB_REPO_URL" class="btn btn-ghost btn-sm" target="_blank">{ } Code</a>
+            <a href="https://mohitrawal-codes.github.io/Color_palette/" class="btn btn-primary btn-sm" target="_blank" rel="noopener">▶ View Live</a>
+            <a href="https://github.com/mohitrawal-codes/Color_palette" class="btn btn-ghost btn-sm" target="_blank" rel="noopener">{ } Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── PROJECT 03: WEATHER & LOCATION API ── -->
+      <div class="project-card reveal">
+        <div class="card-thumb thumb-js" style="background:#cfdce8;">
+          <span>🌤️</span>
+          <span class="thumb-wm">API</span>
+          <span class="card-tag">JavaScript · API</span>
+        </div>
+        <div class="card-body">
+          <div class="card-index">Project 03</div>
+          <h3 class="card-title">Weather &amp; Location Finder</h3>
+          <p class="card-desc">
+            An API-based weather and location finder that fetches real-time weather data and geolocation information using third-party APIs. Deployed on GitHub Pages.
+          </p>
+          <div class="tech-tags">
+            <span class="tag tag-js">JavaScript</span>
+            <span class="tag"> API</span>
+            <span class="tag">HTML5</span>
+            <span class="tag tag-css">CSS3</span>
+            <span class="tag">GitHub Pages</span>
+          </div>
+
+          <div style="border:1px solid var(--line);margin-bottom:1.1rem;">
+            <div style="background:var(--surface);padding:5px 12px;font-size:0.6rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--orange);border-bottom:1px solid var(--line);">Key Features</div>
+            <ul style="list-style:none;padding:10px 12px;display:flex;flex-direction:column;gap:4px;">
+              <li style="font-size:0.74rem;color:var(--muted);padding-left:1.1rem;position:relative;"><span style="position:absolute;left:0;color:var(--orange);">—</span>Real-time weather data via REST API</li>
+              <li style="font-size:0.74rem;color:var(--muted);padding-left:1.1rem;position:relative;"><span style="position:absolute;left:0;color:var(--orange);">—</span>Location detection &amp; search</li>
+              <li style="font-size:0.74rem;color:var(--muted);padding-left:1.1rem;position:relative;"><span style="position:absolute;left:0;color:var(--orange);">—</span>Deployed on GitHub Pages</li>
+            </ul>
+          </div>
+
+          <div class="card-actions">
+            <a href="https://mohitrawal-codes.github.io/API_project/" class="btn btn-primary btn-sm" target="_blank" rel="noopener">▶ View Live</a>
+            <a href="https://github.com/mohitrawal-codes/API_project" class="btn btn-ghost btn-sm" target="_blank" rel="noopener">{ } Code</a>
           </div>
         </div>
       </div>
@@ -185,94 +178,122 @@
     </div>
   </div>
 
-  <!-- ══ FIGMA ══ -->
+  <!-- ══════════════════════════════════════
+       FIGMA / UI·UX PROJECTS
+  ══════════════════════════════════════ -->
   <div class="category-section filter-section" data-category="figma" id="figma">
     <div class="cat-header">
-      <span class="cat-num">03</span>
+      <span class="cat-num">02</span>
       <div>
-        <div class="cat-title">UI/UX & Figma Prototyping</div>
-        <div class="cat-sub">Designed in Figma · Interactive Prototypes</div>
+        <div class="cat-title">UI/UX &amp; Figma Prototyping</div>
+        <div class="cat-sub">Designed in Figma · Interactive Prototypes · Links coming soon</div>
       </div>
       <span class="cat-count">2 Projects</span>
     </div>
 
     <div class="figma-grid">
 
-      <!-- PLANET -->
+      <!-- ── FIGMA 01: SHOE CAROUSEL ── -->
       <div class="figma-card reveal">
         <div class="figma-embed-area">
-          <!-- ↓↓↓ PASTE YOUR FIGMA EMBED IFRAME HERE ↓↓↓ -->
-          <!-- <iframe src="https://www.figma.com/embed?embed_host=share&url=YOUR_URL" allowfullscreen></iframe> -->
-          <div class="figma-placeholder">
-            <span class="figma-placeholder-icon">🪐</span>
-            <div>
-              <p style="color:var(--paper);font-weight:500;margin-bottom:4px;">Planet Landing Page</p>
-              <p>Paste your Figma embed &lt;iframe&gt; here</p>
-              <code style="font-size:0.65rem;background:#2a2a28;padding:3px 8px;display:inline-block;margin-top:6px;color:#888;">figma.com/embed?embed_host=share&url=...</code>
-            </div>
-          </div>
-        </div>
-        <div class="figma-body">
-          <h3 class="figma-title">Planet Landing Page</h3>
-          <p class="figma-desc">
-            A cinematic, space-themed landing page prototype with orbital animations, atmospheric gradients, and scroll-triggered transitions — designed to convey scale and wonder.
-          </p>
-          <div class="ux-panel">
-            <div class="ux-panel-head">UX Design Decisions</div>
-            <ul>
-              <li>Deep space palette maximizes planet visual impact</li>
-              <li>Large hero section for immersive first impression</li>
-              <li>Minimal text — visuals carry the experience</li>
-              <li>High contrast CTA ensures clear user action path</li>
-              <li>Subtle orbit motion adds depth without distraction</li>
-            </ul>
-          </div>
-          <div class="tech-tags" style="margin-bottom:1.1rem;">
-            <span class="tag tag-figma">Figma</span>
-            <span class="tag">Auto Layout</span>
-            <span class="tag">Components</span>
-            <span class="tag">Interactions</span>
-          </div>
-          <a href="https://www.figma.com/proto/YOUR_FILE_ID" class="btn btn-outline btn-sm" target="_blank">↗ Open in Figma</a>
-        </div>
-      </div>
+          <!--
+            ════════════════════════════════════════════
+            PASTE YOUR FIGMA EMBED IFRAME BELOW
+            1. Open your prototype in Figma
+            2. Share → Get embed code
+            3. Uncomment the <iframe> and replace src URL
+            ════════════════════════════════════════════
 
-      <!-- SHOE -->
-      <div class="figma-card reveal">
-        <div class="figma-embed-area">
-          <!-- ↓↓↓ PASTE YOUR FIGMA EMBED IFRAME HERE ↓↓↓ -->
-          <!-- <iframe src="https://www.figma.com/embed?embed_host=share&url=YOUR_URL" allowfullscreen></iframe> -->
+            <iframe
+              src="https://www.figma.com/embed?embed_host=share&url=YOUR_SHOE_PROTOTYPE_URL_HERE"
+              allowfullscreen>
+            </iframe>
+          -->
           <div class="figma-placeholder">
             <span class="figma-placeholder-icon">👟</span>
             <div>
-              <p style="color:var(--paper);font-weight:500;margin-bottom:4px;">Shoe Carousel Landing Page</p>
-              <p>Paste your Figma embed &lt;iframe&gt; here</p>
-              <code style="font-size:0.65rem;background:#2a2a28;padding:3px 8px;display:inline-block;margin-top:6px;color:#888;">figma.com/embed?embed_host=share&url=...</code>
+              <p style="color:var(--paper);font-weight:600;margin-bottom:6px;font-family:'Bebas Neue',sans-serif;font-size:1.1rem;letter-spacing:0.05em;">Shoe Carousel Webpage</p>
+              <p style="font-size:0.74rem;line-height:1.6;">Figma prototype embed coming soon.<br>Paste your embed &lt;iframe&gt; above to activate.</p>
+              <div style="margin-top:12px;display:inline-block;border:1px solid #444;padding:3px 12px;font-size:0.62rem;letter-spacing:0.12em;text-transform:uppercase;color:#666;">Link Pending</div>
             </div>
           </div>
         </div>
         <div class="figma-body">
-          <h3 class="figma-title">Shoe Carousel Landing Page</h3>
+          <h3 class="figma-title">Shoe Carousel Webpage</h3>
           <p class="figma-desc">
-            A product-focused landing page for a premium sneaker brand with a horizontal 3D carousel, floating product tags, and smooth hover transitions — creating an immersive shopping feel.
+            A product-focused landing page for a premium sneaker brand featuring a horizontal carousel layout, floating product tags, bold typography hierarchy, and smooth prototype interactions — designed in Figma with full prototyping.
           </p>
           <div class="ux-panel">
             <div class="ux-panel-head">UX Design Decisions</div>
             <ul>
-              <li>Carousel keeps multiple products visible without clutter</li>
-              <li>Floating badge highlights key selling points fast</li>
-              <li>High contrast shoe image against clean background</li>
-              <li>Bold type hierarchy guides the user journey clearly</li>
-              <li>Drop shadow on shoe adds realism and depth</li>
+              <li>Carousel layout keeps multiple products visible without clutter</li>
+              <li>Floating price/tag badges surface key info without interrupting flow</li>
+              <li>High-contrast product image against clean background for focus</li>
+              <li>Bold display type creates visual hierarchy and guides the eye</li>
+              <li>Smart Animate transitions make the prototype feel native and fluid</li>
             </ul>
           </div>
           <div class="tech-tags" style="margin-bottom:1.1rem;">
             <span class="tag tag-figma">Figma</span>
             <span class="tag">Carousel</span>
             <span class="tag">Smart Animate</span>
-            <span class="tag">E-Commerce</span>
+            <span class="tag">Components</span>
+            <span class="tag">Auto Layout</span>
           </div>
-          <a href="https://www.figma.com/proto/YOUR_FILE_ID" class="btn btn-outline btn-sm" target="_blank">↗ Open in Figma</a>
+          <!-- ↓ Replace # with your actual Figma prototype link when ready -->
+          <a href="#" class="btn btn-outline btn-sm" style="pointer-events:none;opacity:0.45;">↗ Figma Link Coming Soon</a>
+        </div>
+      </div>
+
+      <!-- ── FIGMA 02: PLANET CAROUSEL ── -->
+      <div class="figma-card reveal">
+        <div class="figma-embed-area">
+          <!--
+            ════════════════════════════════════════════
+            PASTE YOUR FIGMA EMBED IFRAME BELOW
+            1. Open your prototype in Figma
+            2. Share → Get embed code
+            3. Uncomment the <iframe> and replace src URL
+            ════════════════════════════════════════════
+
+            <iframe
+              src="https://www.figma.com/embed?embed_host=share&url=YOUR_PLANET_PROTOTYPE_URL_HERE"
+              allowfullscreen>
+            </iframe>
+          -->
+          <div class="figma-placeholder">
+            <span class="figma-placeholder-icon">🪐</span>
+            <div>
+              <p style="color:var(--paper);font-weight:600;margin-bottom:6px;font-family:'Bebas Neue',sans-serif;font-size:1.1rem;letter-spacing:0.05em;">Planet Carousel Webpage</p>
+              <p style="font-size:0.74rem;line-height:1.6;">Figma prototype embed coming soon.<br>Paste your embed &lt;iframe&gt; above to activate.</p>
+              <div style="margin-top:12px;display:inline-block;border:1px solid #444;padding:3px 12px;font-size:0.62rem;letter-spacing:0.12em;text-transform:uppercase;color:#666;">Link Pending</div>
+            </div>
+          </div>
+        </div>
+        <div class="figma-body">
+          <h3 class="figma-title">Planet Carousel Webpage</h3>
+          <p class="figma-desc">
+            A cinematic, space-themed webpage design featuring a planet carousel with immersive scroll interactions, atmospheric gradients, and orbital motion design — built and prototyped in Figma with full interaction flows.
+          </p>
+          <div class="ux-panel">
+            <div class="ux-panel-head">UX Design Decisions</div>
+            <ul>
+              <li>Deep space dark palette maximizes the visual impact of each planet</li>
+              <li>Carousel structure lets users explore planets without leaving the page</li>
+              <li>Minimal text — visuals and motion carry the experience</li>
+              <li>Atmospheric glow effects add depth and reinforce the space theme</li>
+              <li>High-contrast CTA button ensures a clear and visible action path</li>
+            </ul>
+          </div>
+          <div class="tech-tags" style="margin-bottom:1.1rem;">
+            <span class="tag tag-figma">Figma</span>
+            <span class="tag">Carousel</span>
+            <span class="tag">Interactions</span>
+            <span class="tag">Auto Layout</span>
+            <span class="tag">Components</span>
+          </div>
+          <!-- ↓ Replace # with your actual Figma prototype link when ready -->
+          <a href="#" class="btn btn-outline btn-sm" style="pointer-events:none;opacity:0.45;">↗ Figma Link Coming Soon</a>
         </div>
       </div>
 
@@ -283,8 +304,8 @@
 </main>
 
 <footer>
-  <span class="footer-brand">YourName</span>
-  <span class="footer-text">CS Student · Final Year Project · <span>2024</span></span>
+  <span class="footer-brand">MohitRawal</span>
+  <span class="footer-text">CS Student · Final Year Project · <span>2026</span></span>
 </footer>
 
 <script src="../js/main.js"></script>
