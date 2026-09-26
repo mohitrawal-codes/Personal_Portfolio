@@ -809,6 +809,7 @@ section {
 }
 
 /* CERTIFICATIONS */
+
 .cert-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -860,9 +861,12 @@ section {
   flex: 1;
 }
 
+/* STATUS BADGE */
+
 .cert-badge {
   display: inline-flex;
   align-items: center;
+  align-self: flex-start;
   gap: 6px;
   border: 1px solid #b08040;
   color: #b08040;
@@ -878,6 +882,78 @@ section {
   font-size: 0.5rem;
   animation: blink 1.4s step-end infinite;
 }
+
+
+/* CERTIFICATE PREVIEW */
+
+.certificate-preview {
+  margin-top: 0.3rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--line);
+}
+
+.certificate-label {
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.7rem;
+}
+
+.certificate-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--line);
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.certificate-image:hover {
+  transform: translateY(-2px);
+  border-color: var(--ink);
+}
+
+.certificate-link {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 0.8rem;
+  padding: 7px 14px;
+  border: 1px solid var(--ink);
+  color: var(--ink);
+  background: transparent;
+  text-decoration: none;
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: all 0.15s ease;
+}
+
+.certificate-link:hover {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+
+/* CERTIFICATE DETAILS / TOPICS */
+
+.cert-topics {
+  margin-top: 1.2rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--line);
+}
+
+.cert-topics-label {
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+
+/* PROGRESS */
 
 .cert-progress-label {
   font-size: 0.62rem;
@@ -907,6 +983,60 @@ section {
   font-family: var(--display);
   font-size: 1rem;
   color: var(--orange);
+}
+
+
+/* CERTIFICATION STATUS MESSAGE */
+
+.cert-status {
+  border: 1px solid #c0a060;
+  background: #fdf8ee;
+  padding: 1.2rem 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.cert-status-icon {
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+.cert-status-title {
+  color: #8a6020;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+}
+
+.cert-status-text {
+  color: var(--muted);
+  font-size: 0.76rem;
+  line-height: 1.7;
+}
+
+
+/* MOBILE CERTIFICATIONS */
+
+@media (max-width: 640px) {
+  .cert-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cert-card {
+    padding: 1.5rem;
+  }
+
+  .certificate-image {
+    width: 100%;
+  }
+
+  .cert-status {
+    padding: 1rem;
+  }
 }
 
 /* ABOUT */
